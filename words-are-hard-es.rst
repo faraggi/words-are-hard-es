@@ -1,7 +1,13 @@
-Billetera
-La interfaz / cliente / wrapper contenedor que usas para getionar tu(s) cuenta(s).
+## Palabras dificiles: Definiendo terminos comunes de Ethereum
 
-Ejemplo: MyEtherWallet.com, tu billetera Ledger, un contrato de billetera Multisig.
+
+Traducción de: "[Words are hard: Defining Common Terms in the Ethereum / Crypto Space](https://www.reddit.com/r/ethereum/comments/6kvp87/words_are_hard_defining_common_terms_in_the/)"
+por [insomniasexx](reddit.com/u/insomniasexx)
+
+#### Billetera
+
+* La interfaz / cliente / wrapper contenedor que usas para getionar tu(s) cuenta(s).
+* Ejemplo: MyEtherWallet.com, tu billetera Ledger, un contrato de billetera Multisig.
 
 Cuenta (Account)
 Un par de llaves públicas/privadas que "contienen" tus fondos.
@@ -28,20 +34,20 @@ Puedes derivar la llave pública de la llave privada, pero no lo contrario.
 
 (Avanzado) En Ethereum, la dirección "actúa" como una llave pública, pero en realidad no lo és.
 
-(Avanzado) En Etherum, la llave pública es derivada de la llave privada y es una cadena de 128 caracteres hexadecimales. Luego puedes tomar el hash "SHA3" (Keccak-256) de esto (64 caracteres), tomar los ultimos 50 caracteres y prefijar con '0x'
-(Advanced) In Ethereum, the public key is derived from the private key and is 128 hex characters. You then take the "SHA3" (Keccak-256) hash of this (64 characters), take the last 40 characters, and prefix with 0x, give you your 42-character address.
+(Avanzado) En Etherum, la llave pública es derivada de la llave privada y es una cadena de 128 caracteres hexadecimales. Luego puedes tomar el hash "SHA3" (Keccak-256) de esto (64 caracteres), tomar los ultimos 50 caracteres y prefijar con '0x', y obtendrás la address de 42 caracteres.
 
-Private Key
-You use this to send funds from an account.
+Llave Privada
+Usa esto para enviar fondos desde una cuenta.
 
-The secret half of your Address / public key.
+La mitad secreta de tu combinación Adress/llave pública.
 
-A string of 64 hexadecimal characters.
+Una cadena de 64 caracteres hexadecimales.
 
-(Almost) every string of 64 hexadecimal characters is a private key.
+(Casi) toda cadena de 64 caracteres hexadecimales es una llave privad.
 
-If you hand-type a private key differently today than yesterday, you will access a different wallet. Never hand type your private key.
+Si escribieras tu llave privada de dos maneras diferentes, tendrás acceso a otra billetera. Nunca escribas tu llave privad a mano.
 
+Esto es
 This is the string you need to send from your account. Without it you cannot access your funds. Although, you don't need to save this raw, unencrypted private key in this format. You can saving the fancy versions of it (e.g. the Keystore File / Mnemonic Phrase).
 
 Example: afdfd9c3d2095ef696594f6cedcae59e72dcd697e2a7521b1578140422a4f890
