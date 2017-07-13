@@ -1,4 +1,4 @@
-# Palabras difíciles: Definiendo términos comunes de Ethereum
+# Las Palabras son difíciles: Definiendo términos comunes de Ethereum
 
 
 Traducción de: "[Words are hard: Defining Common Terms in the Ethereum / Crypto Space](https://www.reddit.com/r/ethereum/comments/6kvp87/words_are_hard_defining_common_terms_in_the/)"
