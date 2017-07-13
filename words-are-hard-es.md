@@ -66,53 +66,46 @@ por [insomniasexx](reddit.com/u/insomniasexx)
 * Si pierdes tu billetera, aún puedes recuperar acceso a tus cuentas con este hardware.
 * Nunca escribas la frase de recuperación en tu computador. Pierde el objetivo de la billetera hardware.
 
+### AddressIdenticon / AddressIcon:
+
+* La mancha de colores que corresponde a tu billetera.
+* Es una manera simple y facil de ver si tu address es la correcta.
+* [Ejemplo 1](http://i.imgur.com/lHUrIiZ.jpg)
+* [Ejemplo 2](http://i.imgur.com/FvyLewS.jpg)
+* Nota: Las dos de arriba tienen sólo un caracter diferente pero son muy distintas. Magia!
+
+### Hexadecimal:
+
+* Usado por todas partes en Ethereum para una multitud de cosas.
+* Está compuesto por los caractere y números: `0 1 2 3 4 5 6 7 8 9 A B C D E F`
+
+### Seed
+
+El input inicial para derivar la llave privada. Esto siempre debe ser creado de manera totalmente aleatoria, no algo que debieras hacer con la mente.
+* Si eliges la seed, se le dice una "brai wallet"
+
+### Brain Wallet
+
+* Billetera mental en inglés
+* Una cuenta creada a partir de una seed o clave o claves de tu elección.
+* Los humaos no son capables de generar suficiente entropía y por lo tanto las billeteras derivadas de estas frases son inseguras.
+* Los Brain Wallets pueden ser hackeadas a fuerza muy rapido por computadores rápidos.
+* [Los Brain Wallets son en general mal vistos insecure.](https://www.reddit.com/r/ethereum/comments/45y8m7/brain_wallets_are_now_generally_shunned_by/)
+* No uses Brain Wallets.
+
+### Entropía
+
+* También conocido como "aleatoridad"
+* Mientras más aleatorio algo sea, más entropía tiene y más seguro és.
+* En general definido en "bits de entropía" o el número de años que tomaría hackear a fuerza bruta una llave prvada con esa cantidad de entropía.
+* Las llaves privadas de Ethereum son llaves de 256-bit
+* Las frase de 24 palabras también son de 256 bits. Hay 2048 palabras en el diccionario. 11 bits de entropía (las palabras). `11 * 24 = 264`. La última alabra es un checksum.
 
 
 ++++
 ++++
 
-
-#### Hardware Wallet:
-
-* Typically, a single-purpose device that "holds" your private key(s), ensuring your private keys are safe.
-* Typically, they use a 24-word phrase. This phrase you should write down (not on your computer) and store separately from your hardware wallet.
-* If you lose your hardware wallet, you can still gain access to your accounts & funds via the word-phrase you wrote down.
-* Never type the word-phrase on your computer. It defeats the purpose of your hardware wallet.
-
-#### AddressIdenticon / AddressIcon:
-
-* The colorful blob of colors that corresponds to your address.
-* It is an easy way to see if your address is correct.
-* [Example 1](http://i.imgur.com/lHUrIiZ.jpg)
-* [Example 2](http://i.imgur.com/FvyLewS.jpg)
-* Note: the above addresses are a single character different but have remarkably different icons & colors. Magic!
-
-#### Hexadecimal
-
-* Used all over Ethereum for a variety of things, a hexadecimal string is comprised of the numbers `0 1 2 3 4 5 6 7 8 9` and `A B C D E F`
-
-#### Seed
-
-* The input given to derive a private key. This should always be generated in a truly random way, not something you make up with your measly human brain.
-* If you chose the seed, it is known as a `brain wallet`
-
-#### Brain Wallet
-
-* An account generated from a seed or password or passphrase of your choosing.
-* Humans are not capable of generating enough entropy and therefore the wallets derived from these phrases are insecure.
-* Brain wallets can be brute forced by super fast computers.
-* [Brain wallet are insecure.](https://www.reddit.com/r/ethereum/comments/45y8m7/brain_wallets_are_now_generally_shunned_by/)
-* Don't use brain wallets.
-
-#### Entropy
-
-* Also known as "randomness".
-* The more random something is, the more entropy it has, and the more secure it is.
-* Usually defined in "bits of entropy" or the number of years it would take to brute-force a \_\_\_\_\_\_\_ (e.g. private key) derived with that much entropy.
-* Ethereum private keys are 256-bit keys
-* 24-Word mnemonic phrases are also 256 bits of entropy. 2048 words in the dictionary. 11 bits of entropy (the words). `11 * 24 = 264`. The last word is a checksum.
-
-### TO DO STILL:
+### TODO:
 
 #### Derive / Derivation
 
