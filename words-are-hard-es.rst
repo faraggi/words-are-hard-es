@@ -1,33 +1,34 @@
-Wallet
-The interface / client / wrapper / holder that you use to manage your account(s).
+Billetera
+La interfaz / cliente / wrapper contenedor que usas para getionar tu(s) cuenta(s).
 
-Example: MyEtherWallet.com, your Ledger Hardware Wallet, a Multisig Wallet Contract.
+Ejemplo: MyEtherWallet.com, tu billetera Ledger, un contrato de billetera Multisig.
 
-Account
-A public & private keypair that "holds" your funds.
+Cuenta (Account)
+Un par de llaves públicas/privadas que "contienen" tus fondos.
 
-Your funds are actually stored on the blockchain, not in the wallet or account.
+En realidad, tus fondos están contenidos en la blockchain, no en la billetera o en la cuenta.
 
-Just like your Reddit account has ausername (public) and password (private), so does your Ethereum account. For additional security, you can use a password to encrypt your private key which would result in a username (public) and password (private) and password for that password (private + more secure). See the Keystore File section.
+Tal como tu cuenta Reddit tiene un nombre de usuario (público) y una clave (privada), tu cuenta Ethereum es igual. Para más seguridad, puedes usar un password para encriptar tu llave privada que puede resultar en un usario (púbilco) y un password (privada) y un password para ese password (privado + seguro). Ver la sección de Keystore File.
 
-Address ("Public Key")
-You use this to send funds to an account.
+Address ("Llave Pública")
+Usas esto para enviar fondos a una cuenta.
 
-Sometimes referred to as the "public key"
+Algunas veces se le refiere como "llave pública".
 
-A string made up of 0x + 40 hexadecimal characters.
+Una cadena de caracteres de '0x' + 40 caracteres hexadecimales.
 
-In Ethereum, the address begins with 0x.
+En Ethereum, las address comienzan con 0x.
 
-Example: 0x06A85356DCb5b307096726FB86A78c59D38e08ee
+Ejemplo: 0x06A85356DCb5b307096726FB86A78c59D38e08ee
 
-Public Key
-In cryptography, you have a keypair: the public and private key.
+LLave Pública
+En la critografía, hay un par de llaves: la pública y la privada.
 
-You can derive a public key from a private key, but cannot derive a private key from a public key.
+Puedes derivar la llave pública de la llave privada, pero no lo contrario.
 
-(Advanced) In Ethereum, the address "acts" like the public key, but it's not actually the public key.
+(Avanzado) En Ethereum, la dirección "actúa" como una llave pública, pero en realidad no lo és.
 
+(Avanzado) En Etherum, la llave pública es derivada de la llave privada y es una cadena de 128 caracteres hexadecimales. Luego puedes tomar el hash "SHA3" (Keccak-256) de esto (64 caracteres), tomar los ultimos 50 caracteres y prefijar con '0x'
 (Advanced) In Ethereum, the public key is derived from the private key and is 128 hex characters. You then take the "SHA3" (Keccak-256) hash of this (64 characters), take the last 40 characters, and prefix with 0x, give you your 42-character address.
 
 Private Key
