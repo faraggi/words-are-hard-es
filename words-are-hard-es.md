@@ -70,8 +70,8 @@ por [insomniasexx](reddit.com/u/insomniasexx)
 
 * La mancha de colores que corresponde a tu billetera.
 * Es una manera simple y fácil de ver si tu address es la correcta.
-* [Ejemplo 1](http://i.imgur.com/lHUrIiZ.jpg)
-* [Ejemplo 2](http://i.imgur.com/FvyLewS.jpg)
+* ![Ejemplo 1](http://i.imgur.com/lHUrIiZ.jpg)
+* ![Ejemplo 2](http://i.imgur.com/FvyLewS.jpg)
 * Nota: Las dos de arriba tienen sólo un caracter diferente pero son muy distintas. Magia!
 
 ### Hexadecimal:
