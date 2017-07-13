@@ -1,4 +1,4 @@
-# Palabras dificiles: Definiendo términos comunes de Ethereum
+# Palabras difíciles: Definiendo términos comunes de Ethereum
 
 
 Traducción de: "[Words are hard: Defining Common Terms in the Ethereum / Crypto Space](https://www.reddit.com/r/ethereum/comments/6kvp87/words_are_hard_defining_common_terms_in_the/)"
@@ -28,12 +28,12 @@ por [insomniasexx](reddit.com/u/insomniasexx)
 * En la criptografía, hay un par de llaves: la pública y la privada.
 * Puedes derivar la llave pública de la llave privada, pero no lo contrario.
 * (Avanzado) En Ethereum, la dirección "actúa" como una llave pública, pero en realidad no lo és.
-* (Avanzado) En Etherum, la llave pública es derivada de la llave privada y es una cadena de 128 caracteres hexadecimales. Luego puedes tomar el hash "SHA3" (Keccak-256) de esto (64 caracteres), tomar los últimos 50 caracteres y prefijar con '0x', y obtendrás la address de 42 caracteres.
+* (Avanzado) En Ethereum, la llave pública es derivada de la llave privada y es una cadena de 128 caracteres hexadecimales. Luego puedes tomar el hash "SHA3" (Keccak-256) de esto (64 caracteres), tomar los últimos 50 caracteres y prefijar con '0x', y obtendrás la address de 42 caracteres.
 
 ### Llave Privada
 
 * Usa esto para enviar fondos desde una cuenta.
-* La mitad secreta de tu combinación Adress/llave pública.
+* La mitad secreta de tu combinación Address/llave pública.
 * Una cadena de 64 caracteres hexadecimales.
 * (Casi) toda cadena de 64 caracteres hexadecimales es una llave privad.
 * Si escribieras tu llave privada de dos maneras diferentes, tendrás acceso a otra billetera. Nunca escribas tu llave privad a mano.
