@@ -1,53 +1,47 @@
-## Palabras dificiles: Definiendo terminos comunes de Ethereum
+# Palabras dificiles: Definiendo terminos comunes de Ethereum
 
 
 Traducción de: "[Words are hard: Defining Common Terms in the Ethereum / Crypto Space](https://www.reddit.com/r/ethereum/comments/6kvp87/words_are_hard_defining_common_terms_in_the/)"
 por [insomniasexx](reddit.com/u/insomniasexx)
 
-#### Billetera
+## Billetera
 
 * La interfaz / cliente / wrapper contenedor que usas para getionar tu(s) cuenta(s).
 * Ejemplo: MyEtherWallet.com, tu billetera Ledger, un contrato de billetera Multisig.
 
-Cuenta (Account)
-Un par de llaves públicas/privadas que "contienen" tus fondos.
+## Cuenta (Account)
 
-En realidad, tus fondos están contenidos en la blockchain, no en la billetera o en la cuenta.
+* Un par de llaves públicas/privadas que "contienen" tus fondos.
+* En realidad, tus fondos están contenidos en la blockchain, no en la billetera o en la cuenta.
+* Tal como tu cuenta Reddit tiene un nombre de `usuario (público)` y una `clave (privada)`, tu cuenta Ethereum es igual. Para más seguridad, puedes usar un password para encriptar tu llave privada que puede resultar en un `usario (púbilco)` y una `clave (privada)` y una `clave` para `esa clave (privado + seguro)`. Ver la sección de Keystore File.
 
-Tal como tu cuenta Reddit tiene un nombre de usuario (público) y una clave (privada), tu cuenta Ethereum es igual. Para más seguridad, puedes usar un password para encriptar tu llave privada que puede resultar en un usario (púbilco) y un password (privada) y un password para ese password (privado + seguro). Ver la sección de Keystore File.
+## Address ("Llave Pública")
 
-Address ("Llave Pública")
-Usas esto para enviar fondos a una cuenta.
+* Usas esto para enviar fondos a una cuenta.
+* Algunas veces se le refiere como "llave pública".
+* Una cadena de caracteres de '0x' + 40 caracteres hexadecimales.
+* En Ethereum, las address comienzan con 0x.
+* Ejemplo: 0x06A85356DCb5b307096726FB86A78c59D38e08ee
 
-Algunas veces se le refiere como "llave pública".
+## LLave Pública
 
-Una cadena de caracteres de '0x' + 40 caracteres hexadecimales.
+* En la critografía, hay un par de llaves: la pública y la privada.
+* Puedes derivar la llave pública de la llave privada, pero no lo contrario.
+* (Avanzado) En Ethereum, la dirección "actúa" como una llave pública, pero en realidad no lo és.
+* (Avanzado) En Etherum, la llave pública es derivada de la llave privada y es una cadena de 128 caracteres hexadecimales. Luego puedes tomar el hash "SHA3" (Keccak-256) de esto (64 caracteres), tomar los ultimos 50 caracteres y prefijar con '0x', y obtendrás la address de 42 caracteres.
 
-En Ethereum, las address comienzan con 0x.
+## Llave Privada
 
-Ejemplo: 0x06A85356DCb5b307096726FB86A78c59D38e08ee
+* Usa esto para enviar fondos desde una cuenta.
+* La mitad secreta de tu combinación Adress/llave pública.
+* Una cadena de 64 caracteres hexadecimales.
+* (Casi) toda cadena de 64 caracteres hexadecimales es una llave privad.
+* Si escribieras tu llave privada de dos maneras diferentes, tendrás acceso a otra billetera. Nunca escribas tu llave privad a mano.
 
-LLave Pública
-En la critografía, hay un par de llaves: la pública y la privada.
+Estos son los caracteres que necesitas para enviar desde tu cuenta. Sin ello, no puedes acceder a los fondos. A pesar de que, no necesitas guardarla bruta sin encriptar en este formato. Puedes guardar versiones mas elaboradas de ella (ej. el archivo Keystore / una frase mnemotécnica).
 
-Puedes derivar la llave pública de la llave privada, pero no lo contrario.
+++++
 
-(Avanzado) En Ethereum, la dirección "actúa" como una llave pública, pero en realidad no lo és.
-
-(Avanzado) En Etherum, la llave pública es derivada de la llave privada y es una cadena de 128 caracteres hexadecimales. Luego puedes tomar el hash "SHA3" (Keccak-256) de esto (64 caracteres), tomar los ultimos 50 caracteres y prefijar con '0x', y obtendrás la address de 42 caracteres.
-
-Llave Privada
-Usa esto para enviar fondos desde una cuenta.
-
-La mitad secreta de tu combinación Adress/llave pública.
-
-Una cadena de 64 caracteres hexadecimales.
-
-(Casi) toda cadena de 64 caracteres hexadecimales es una llave privad.
-
-Si escribieras tu llave privada de dos maneras diferentes, tendrás acceso a otra billetera. Nunca escribas tu llave privad a mano.
-
-Esto es
 This is the string you need to send from your account. Without it you cannot access your funds. Although, you don't need to save this raw, unencrypted private key in this format. You can saving the fancy versions of it (e.g. the Keystore File / Mnemonic Phrase).
 
 Example: afdfd9c3d2095ef696594f6cedcae59e72dcd697e2a7521b1578140422a4f890
