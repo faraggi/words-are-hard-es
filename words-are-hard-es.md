@@ -37,29 +37,25 @@ por [insomniasexx](reddit.com/u/insomniasexx)
 * Una cadena de 64 caracteres hexadecimales.
 * (Casi) toda cadena de 64 caracteres hexadecimales es una llave privad.
 * Si escribieras tu llave privada de dos maneras diferentes, tendrás acceso a otra billetera. Nunca escribas tu llave privad a mano.
+* Estos son los caracteres que necesitas para enviar desde tu cuenta. Sin ello, no puedes acceder a los fondos. A pesar de que, no necesitas guardarla bruta sin encriptar en este formato. Puedes guardar versiones mas elaboradas de ella (ej. el archivo Keystore / una frase mnemotécnica).
+* Ejemplo: afdfd9c3d2095ef696594f6cedcae59e72dcd697e2a7521b1578140422a4f890
 
-Estos son los caracteres que necesitas para enviar desde tu cuenta. Sin ello, no puedes acceder a los fondos. A pesar de que, no necesitas guardarla bruta sin encriptar en este formato. Puedes guardar versiones mas elaboradas de ella (ej. el archivo Keystore / una frase mnemotécnica).
+Archivo Keystore
+* Version criptada de tu llave privada en formato JSON (aunque no tiene extensión JSON)
+* una versión elaborada de tu llave privada que está protegida por una clave que has elegido tu.
+* Cuando se combina con la clave, crea la llave privada.
+* Más segura que las llaves privadas ya que necesitas la clave.
+* El nombre del archivo en general tiene el formato `UTC + -- + FECHA_CREADA + -- + TU_ADDRESS_SIN_0x`
+* Ejemplo de nombre de archivo: `UTC--2017-07-02T20-33-09.177Z--06a85356dcb5b307096726fb86a78c59d38e08ee`
+* Ejemplo de contenidos: `{"version":3,"id":"aa811d53-fe9a-44a2-bd1c-e737007b5591","address":"06a85356dcb5b307096726fb86a78c59d38e08ee","Crypto":{"ciphertext":"f5a7cc8d4b8cf93510b0d0d057f3a52ac79fd48e619e0638c4ffd978ca180248","cipherparams":{"iv":"975ab00192e2dd74170e91ca59c0b0bd"},"cipher":"aes-128-ctr","kdf":"scrypt","kdfparams":{"dklen":32,"salt":"0210f0d0b99e440dfbceb36373304638bac093a367ee7da6411cd165f7aa907a","n":1024,"r":8,"p":1},"mac":"8197a747a3855a10546a2ff939c36470daed78e393b670efa0c12fe3b23dd7e3"}}`
+
+
 
 ++++
 
-This is the string you need to send from your account. Without it you cannot access your funds. Although, you don't need to save this raw, unencrypted private key in this format. You can saving the fancy versions of it (e.g. the Keystore File / Mnemonic Phrase).
 
-Example: afdfd9c3d2095ef696594f6cedcae59e72dcd697e2a7521b1578140422a4f890
 
-Keystore File
-Encrypted version of your private key in JSON format (though it does not have a JSON extension)
 
-A fancy version of your private key that is protected by a password of your choosing.
-
-When combined with the password, it has the private key.
-
-Safer than a private key because you need the password.
-
-File name usually is in the format UTC + -- + DATE_CREATED + -- + YOUR_ADDRESS_WITHOUT_THE_OX
-
-Example of File Nae: UTC--2017-07-02T20-33-09.177Z--06a85356dcb5b307096726fb86a78c59d38e08ee
-
-Example of Contents: {"version":3,"id":"aa811d53-fe9a-44a2-bd1c-e737007b5591","address":"06a85356dcb5b307096726fb86a78c59d38e08ee","Crypto":{"ciphertext":"f5a7cc8d4b8cf93510b0d0d057f3a52ac79fd48e619e0638c4ffd978ca180248","cipherparams":{"iv":"975ab00192e2dd74170e91ca59c0b0bd"},"cipher":"aes-128-ctr","kdf":"scrypt","kdfparams":{"dklen":32,"salt":"0210f0d0b99e440dfbceb36373304638bac093a367ee7da6411cd165f7aa907a","n":1024,"r":8,"p":1},"mac":"8197a747a3855a10546a2ff939c36470daed78e393b670efa0c12fe3b23dd7e3"}}
 
 (pw: mypassword)
 
