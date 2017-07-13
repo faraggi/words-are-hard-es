@@ -1,4 +1,4 @@
-# Palabras dificiles: Definiendo terminos comunes de Ethereum
+# Palabras dificiles: Definiendo términos comunes de Ethereum
 
 
 Traducción de: "[Words are hard: Defining Common Terms in the Ethereum / Crypto Space](https://www.reddit.com/r/ethereum/comments/6kvp87/words_are_hard_defining_common_terms_in_the/)"
@@ -6,7 +6,7 @@ por [insomniasexx](reddit.com/u/insomniasexx)
 
 ### Billetera
 
-* La interfaz / cliente / wrapper contenedor que usas para getionar tu(s) cuenta(s).
+* La interfaz / cliente / wrapper contenedor que usas para gestionar tu(s) cuenta(s).
 * Ejemplo: MyEtherWallet.com, tu billetera Ledger, un contrato de billetera Multisig.
 
 ### Cuenta (Account)
@@ -25,10 +25,10 @@ por [insomniasexx](reddit.com/u/insomniasexx)
 
 ### LLave Pública
 
-* En la critografía, hay un par de llaves: la pública y la privada.
+* En la criptografía, hay un par de llaves: la pública y la privada.
 * Puedes derivar la llave pública de la llave privada, pero no lo contrario.
 * (Avanzado) En Ethereum, la dirección "actúa" como una llave pública, pero en realidad no lo és.
-* (Avanzado) En Etherum, la llave pública es derivada de la llave privada y es una cadena de 128 caracteres hexadecimales. Luego puedes tomar el hash "SHA3" (Keccak-256) de esto (64 caracteres), tomar los ultimos 50 caracteres y prefijar con '0x', y obtendrás la address de 42 caracteres.
+* (Avanzado) En Etherum, la llave pública es derivada de la llave privada y es una cadena de 128 caracteres hexadecimales. Luego puedes tomar el hash "SHA3" (Keccak-256) de esto (64 caracteres), tomar los últimos 50 caracteres y prefijar con '0x', y obtendrás la address de 42 caracteres.
 
 ### Llave Privada
 
@@ -41,7 +41,7 @@ por [insomniasexx](reddit.com/u/insomniasexx)
 * Ejemplo: afdfd9c3d2095ef696594f6cedcae59e72dcd697e2a7521b1578140422a4f890
 
 ### Archivo Keystore
-* Version criptada de tu llave privada en formato JSON (aunque no tiene extensión JSON)
+* Versión encriptada de tu llave privada en formato JSON (aunque no tiene extensión JSON)
 * una versión elaborada de tu llave privada que está protegida por una clave que has elegido tu.
 * Cuando se combina con la clave, crea la llave privada.
 * Más segura que las llaves privadas ya que necesitas la clave.
@@ -51,7 +51,7 @@ por [insomniasexx](reddit.com/u/insomniasexx)
 * (clave: `mypassword`)
 
 ### Frase Mnemotécnica:
-* Otra versión elaborada de guardar tu llave pricada, que es realmente utilizada para derivada multiples llaves privadas.
+* Otra versión elaborada de guardar tu llave privada, que es realmente utilizada para derivar multiples llaves privadas.
 * Una frase (en general) de 12 o 24 palabras que permite de acceder una infinidad de cuentas.
 * Usada por Ledger, TREZOR, MetaMask, Jaxx, y otros.
 * Origina de la especificación BIP 39
@@ -69,7 +69,7 @@ por [insomniasexx](reddit.com/u/insomniasexx)
 ### AddressIdenticon / AddressIcon:
 
 * La mancha de colores que corresponde a tu billetera.
-* Es una manera simple y facil de ver si tu address es la correcta.
+* Es una manera simple y fácil de ver si tu address es la correcta.
 * [Ejemplo 1](http://i.imgur.com/lHUrIiZ.jpg)
 * [Ejemplo 2](http://i.imgur.com/FvyLewS.jpg)
 * Nota: Las dos de arriba tienen sólo un caracter diferente pero son muy distintas. Magia!
@@ -88,19 +88,21 @@ El input inicial para derivar la llave privada. Esto siempre debe ser creado de 
 
 * Billetera mental en inglés
 * Una cuenta creada a partir de una seed o clave o claves de tu elección.
-* Los humaos no son capables de generar suficiente entropía y por lo tanto las billeteras derivadas de estas frases son inseguras.
-* Los Brain Wallets pueden ser hackeadas a fuerza muy rapido por computadores rápidos.
+* Los humanos no son capables de generar suficiente entropía y por lo tanto las billeteras derivadas de estas frases son inseguras.
+* Los Brain Wallets pueden ser hackeadas a fuerza muy rápido por computadores rápidos.
 * [Los Brain Wallets son en general mal vistos insecure.](https://www.reddit.com/r/ethereum/comments/45y8m7/brain_wallets_are_now_generally_shunned_by/)
 * No uses Brain Wallets.
 
 ### Entropía
 
-* También conocido como "aleatoridad"
-* Mientras más aleatorio algo sea, más entropía tiene y más seguro és.
-* En general definido en "bits de entropía" o el número de años que tomaría hackear a fuerza bruta una llave prvada con esa cantidad de entropía.
+* También conocido como "aleatoriedad"
+* Mientras más aleatorio algo sea, más entropía tiene y más seguro es.
+* En general definido en "bits de entropía" o el número de años que tomaría hackear a fuerza bruta una llave privada con esa cantidad de entropía.
 * Las llaves privadas de Ethereum son llaves de 256-bit
-* Las frase de 24 palabras también son de 256 bits. Hay 2048 palabras en el diccionario. 11 bits de entropía (las palabras). `11 * 24 = 264`. La última alabra es un checksum.
+* Las frase de 24 palabras también son de 256 bits. Hay 2048 palabras en el diccionario. 11 bits de entropía (las palabras). `11 * 24 = 264`. La última palabra es un checksum.
 
+#### WEI vs GWEI vs Shannon vs Ether
+![http://i.imgur.com/SXpY3HU.jpg](http://i.imgur.com/SXpY3HU.jpg)
 
 ++++
 ++++
